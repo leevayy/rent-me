@@ -1,0 +1,17 @@
+{
+	"tasks": {
+		"dev": "deno run --watch --env-file --unstable-kv -A main.ts"
+	},
+	"imports": {
+		"@std/assert": "jsr:@std/assert@1",
+		"telegraf": "npm:telegraf@^4.16.3"
+	},
+	"lint": {
+		"ignore": ["dist", "node_modules"]
+	},
+	"fmt": {
+		"indentWidth": 2,
+		"useTabs": true,
+		"lineWidth": 80
+	}
+}
