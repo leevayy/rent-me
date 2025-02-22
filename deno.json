@@ -1,13 +1,12 @@
 {
 	"tasks": {
-		"dev": "deno run --watch --env-file --unstable-kv -A main.ts"
+		"dev": "deno run --watch --env-file --unstable-kv --unstable-cron -A main.ts"
 	},
 	"imports": {
 		"@std/assert": "jsr:@std/assert@1",
+		"@std/ulid": "jsr:@std/ulid@^1.0.0",
+		"moderndash": "npm:moderndash@^4.0.0",
 		"telegraf": "npm:telegraf@^4.16.3"
-	},
-	"lint": {
-		"ignore": ["dist", "node_modules"]
 	},
 	"fmt": {
 		"indentWidth": 2,
