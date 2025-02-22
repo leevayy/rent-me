@@ -80,5 +80,5 @@ export const appointmentsToMessage = async (
 				);
 			},
 		)
-	).join("\n");
+	).join("\n") || "Нет записей на консультации";
 };
