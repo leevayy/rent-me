@@ -1,0 +1,9 @@
+{
+    "processes": [
+        {
+            "id": "rent-me-bot",
+            "cmd": "deno run prod",
+            "autostart": true
+        }
+    ]
+}

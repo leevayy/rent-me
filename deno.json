@@ -1,6 +1,7 @@
 {
 	"tasks": {
-		"dev": "deno run --watch --env-file --unstable-kv --unstable-cron -A main.ts"
+		"dev": "deno run --watch --env-file --unstable-kv --unstable-cron -A main.ts",
+		"prod": "deno run --env-file=.env --unstable-kv --unstable-cron -A main.ts"
 	},
 	"imports": {
 		"@std/assert": "jsr:@std/assert@1",
